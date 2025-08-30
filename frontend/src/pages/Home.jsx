@@ -43,7 +43,15 @@ function Home() {
 
         </div>
       </section>
+       {/* Call to Action */}
+      <section className="cta">
+        <button onClick={() => (window.location.href = "/register")}>
+          Register Now
+        </button>
+      </section>
     </div>
+
+    
   );
 }
 

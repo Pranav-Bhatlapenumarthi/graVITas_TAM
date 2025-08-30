@@ -14,6 +14,7 @@ body{
 .intro h1 {
     color: white;
     font-size: 5em;
+    margin: 0 auto;
     margin-bottom: 15px;
     padding: 5%;
 }
@@ -25,49 +26,66 @@ body{
 .intro p {
     font-size: 18px;
     max-width: 800px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     line-height: 1.6;
 }
 
 
 .events h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .event-cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .event-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-  width: 280px;
-  text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
 }
 
 .event-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .event-card p {
-  font-size: 15px;
-  margin-bottom: 8px;
+    font-size: 15px;
+    margin-bottom: 8px;
 }
 
 .event-card span {
-  font-size: 14px;
-  color: #ccc;
+    font-size: 14px;
+    color: #ccc;
 }
 
 .event-card:hover {
-  transform: scale(1.05);
-  background: rgba(3, 53, 255, 0.2);
+    transform: scale(1.05);
+    background: rgba(3, 53, 255, 0.2);
 }
 
+.cta button {
+    background: black;
+    border: none;
+    padding: 15px 30px;
+    margin: 3%;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background: steelblue;
+}
