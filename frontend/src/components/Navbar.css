@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+}
+
+.li{
+    text-decoration: none;
+  color: white;
+}
