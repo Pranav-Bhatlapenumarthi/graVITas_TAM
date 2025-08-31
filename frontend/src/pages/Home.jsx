@@ -66,7 +66,7 @@ function Home() {
       </section>
        {/* Call to Action */}
       <section className="cta">
-        <button onClick={() => (window.location.href = "/register")}>
+        <button onClick={() => (window.location.href = "/registration")}>
           Register Now
         </button>
       </section>

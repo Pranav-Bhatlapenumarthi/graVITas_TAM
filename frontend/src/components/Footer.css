@@ -17,6 +17,7 @@
     flex: 1;
     min-width: 250px;
     margin: 15px;
+    z-index: 2;
 }
 
 .footer-socials h3{
