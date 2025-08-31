@@ -1,5 +1,7 @@
 import "./Home.css";
 import React from "react";
+import PixelCard from "../assets/PixelCard";
+import DotGrid from "../assets/DotGrid";
 
 function Home() {
   return (
@@ -15,30 +17,36 @@ function Home() {
         <h2>Check out our upcoming events !</h2>
         <div className="event-cards">
           <div className="event-card">
-            <h3>Survival Showdown</h3>
-            <p>
-              A thrilling coding challenge where participants must survive
-              through rounds of problem-solving. 
-            </p>
-            <span>Date: 15th Sept 2025</span>
+            <PixelCard variant="blue">
+              <h3>Survival Showdown</h3>
+              <p>
+                A thrilling coding challenge where participants must survive
+                through rounds of problem-solving. 
+              </p>
+              <span>Date: 15th Sept 2025</span>
+          </PixelCard>
           </div>
 
            <div className="event-card">
-            <h3>Hackathon</h3>
-            <p>
-              Collaborate, innovate, and build exciting projects in a 24-hour
-              hackathon. 
-            </p>
-            <span>Date: 22nd Sept 2025</span>
+              <PixelCard variant="blue">
+                <h3>Hackathon</h3>
+                <p>
+                  Collaborate, innovate, and build exciting projects in a 24-hour
+                  hackathon. 
+                </p>
+                <span>Date: 22nd Sept 2025</span>
+              </PixelCard>
           </div>
 
           <div className="event-card">
-            <h3>Data Alchemy</h3>
-            <p>
-              A data-driven competition where participants transform raw data
-              into powerful insights.
-            </p>
-            <span>Date: 5th Oct 2025</span>
+            <PixelCard variant="blue">
+              <h3>Data Alchemy</h3>
+              <p>
+                A data-driven competition where participants transform raw data
+                into powerful insights.
+              </p>
+              <span>Date: 5th Oct 2025</span>
+            </PixelCard>
           </div>
 
         </div>
@@ -49,9 +57,7 @@ function Home() {
           Register Now
         </button>
       </section>
-    </div>
-
-    
+    </div>    
   );
 }
 
