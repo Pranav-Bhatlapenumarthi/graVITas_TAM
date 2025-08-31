@@ -10,9 +10,9 @@ function Navbar(){
                 <li className="dropdown">
                     <Link className="dropbtn" to="/events">Events</Link>
                     <div className="dropdown-content">
-                        <Link to="/service1">Survival Showdown</Link>
-                        <Link to="/service2">Data Alchemy</Link>
-                        <Link to="/service3">Hackathon</Link>
+                        <Link to="/events/survival-showdown">Survival Showdown</Link>
+                        <Link to="/events/data-alchemy">Data Alchemy</Link>
+                        <Link to="/events/hackathon">Hackathon</Link>
                     </div>
                 </li>
                 <li><Link to="/registration">Registration</Link></li>

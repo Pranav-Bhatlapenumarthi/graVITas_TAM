@@ -1,7 +1,6 @@
 import "./Home.css";
 import React from "react";
 import PixelCard from "../assets/PixelCard";
-import DotGrid from "../assets/DotGrid";
 
 function Home() {
   return (
