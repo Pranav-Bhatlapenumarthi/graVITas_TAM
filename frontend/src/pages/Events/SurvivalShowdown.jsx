@@ -1,7 +1,18 @@
 import React from "react";
+import "./IndividualEvent.css"
+import LetterGlitch from "../../assets/LetterGlitch";
 
 function SurvivalShowdown() {
   return (
+    <>
+    <div className="event-bg">
+      <LetterGlitch
+        glitchSpeed={50}
+        centerVignette={true}
+        outerVignette={false}
+        smooth={true}
+      />
+    </div>
     <div className="event-detail">
       <h1>Survival Showdown</h1>
       <p>
@@ -17,13 +28,14 @@ function SurvivalShowdown() {
       </ul>
 
       <h2>Register</h2>
-      <a href="your-custom-form-link" target="_blank" rel="noreferrer">
+      <a href="/registration" target="_blank" rel="noreferrer">
         <button>Register on Our Site</button>
       </a>
-      <a href="vit-gravitas-link" target="_blank" rel="noreferrer">
+      <a href="/vit-grav-link" target="_blank" rel="noreferrer">
         <button>Register on VIT Gravitas</button>
       </a>
     </div>
+    </>
   );
 }
 

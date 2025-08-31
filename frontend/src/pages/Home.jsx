@@ -1,9 +1,23 @@
 import "./Home.css";
 import React from "react";
 import PixelCard from "../assets/PixelCard";
+import Particles from "../assets/Particles";
 
 function Home() {
   return (
+    <>
+    <div className="home-bg">
+      <Particles
+            particleColors={['#ffffff', '#ffffff']}
+            particleCount={500}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+        />
+    </div>
     <div className="home">
       <section className="intro">
         <h1>TAM-VIT</h1>
@@ -56,7 +70,8 @@ function Home() {
           Register Now
         </button>
       </section>
-    </div>    
+    </div>
+    </> 
   );
 }
 

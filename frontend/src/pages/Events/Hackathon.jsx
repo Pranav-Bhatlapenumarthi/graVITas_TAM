@@ -1,7 +1,18 @@
 import React from "react";
+import "./IndividualEvent.css"
+import LetterGlitch from "../../assets/LetterGlitch";
 
 function Hackathon() {
   return (
+    <>
+    <div className="event-bg">
+      <LetterGlitch
+        glitchSpeed={50}
+        centerVignette={true}
+        outerVignette={false}
+        smooth={true}
+      />
+    </div>
     <div className="event-detail">
       <h1>Hackathon</h1>
       <p>
@@ -24,6 +35,7 @@ function Hackathon() {
         <button>Register on VIT Gravitas</button>
       </a>
     </div>
+  </>
   );
 }
 

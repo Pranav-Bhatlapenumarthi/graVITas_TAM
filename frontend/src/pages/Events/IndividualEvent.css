@@ -1,0 +1,45 @@
+.event-bg {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind */
+}
+
+.event-detail {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: aliceblue;
+  opacity: 95%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.event-detail h1 {
+  font-size: 2.2rem;
+  color: #5227FF;
+  margin-bottom: 15px;
+}
+
+.event-detail h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-detail p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.event-detail ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #444;
+}
