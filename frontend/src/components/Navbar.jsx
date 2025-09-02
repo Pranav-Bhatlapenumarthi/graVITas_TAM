@@ -4,7 +4,7 @@ import "./Navbar.css";
 function Navbar(){
     return(
         <nav className="navbar">
-            <h2>graVITas_TAM</h2>
+            <h2>TAM</h2>
             <ul className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li className="dropdown">
@@ -15,7 +15,6 @@ function Navbar(){
                         <Link to="/events/hackathon">Hackathon</Link>
                     </div>
                 </li>
-                <li><Link to="/registration">Registration</Link></li>
                 <li><Link to="/contact">Get in Touch</Link></li>
             </ul>
         </nav>

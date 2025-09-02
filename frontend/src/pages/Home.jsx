@@ -38,6 +38,9 @@ function Home() {
               </p>
               <span>Date: 15th Sept 2025</span>
           </PixelCard>
+            <button onClick={() => (window.location.href = "/events/survival-showdown")}>
+              Register Now
+            </button>
           </div>
 
            <div className="event-card">
@@ -49,6 +52,9 @@ function Home() {
                 </p>
                 <span>Date: 22nd Sept 2025</span>
               </PixelCard>
+              <button onClick={() => (window.location.href = "/events/hackathon")}>
+              Register Now
+            </button>
           </div>
 
           <div className="event-card">
@@ -60,15 +66,11 @@ function Home() {
               </p>
               <span>Date: 5th Oct 2025</span>
             </PixelCard>
+            <button onClick={() => (window.location.href = "/events/data-alchemy")}>
+              Register Now
+            </button>
           </div>
-
         </div>
-      </section>
-       {/* Call to Action */}
-      <section className="cta">
-        <button onClick={() => (window.location.href = "/registration")}>
-          Register Now
-        </button>
       </section>
     </div>
     </> 

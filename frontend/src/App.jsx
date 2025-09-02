@@ -19,7 +19,6 @@ function App(){
         <Route path="/events/survival-showdown" element={<SurvivalShowdown />} />
         <Route path="/events/data-alchemy" element={<DataAlchemy />} />
         <Route path="/events/hackathon" element={<Hackathon />} />
-        {/* <Route path="/registration" element={<Registration />} /> */}
         {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       <Footer />
