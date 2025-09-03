@@ -1,17 +1,19 @@
 import React from "react";
 import "./IndividualEvent.css"
 import LetterGlitch from "../../assets/LetterGlitch";
+import { Link } from "react-router-dom";
+
 function DataAlchemy() {
   return (
     <>
-    <div className="event-bg">
+    {/* <div className="event-bg">
       <LetterGlitch
         glitchSpeed={50}
         centerVignette={true}
         outerVignette={false}
         smooth={true}
       />
-    </div>
+    </div> */}
     <div className="event-detail">
       <h1>Data Alchemy</h1>
       <p>
@@ -25,6 +27,10 @@ function DataAlchemy() {
         <li>All solutions must be original.</li>
         <li>Time limit: 2 hours.</li>
       </ul>
+      <Link to="/register/individual" className="team-link">Click for Registration</Link>
+      <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
+        <button>Register on VIT Gravitas</button>
+      </a>
     </div>
     </>
   );

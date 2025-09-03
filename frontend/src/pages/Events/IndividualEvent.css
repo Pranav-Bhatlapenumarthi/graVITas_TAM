@@ -1,3 +1,7 @@
+*{
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
 .event-bg {
   position: absolute;
   top: 10%;
@@ -6,6 +10,7 @@
   height: 100%;
   z-index: -1; /* Behind */
 }
+
 
 .event-detail {
   max-width: 800px;
@@ -42,4 +47,14 @@
   margin-left: 20px;
   list-style-type: disc;
   color: #444;
+}
+
+.team-link{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.375rem;
+  background-color: black;
+  padding: 0.9rem 1rem;
+  font-size: 1.1em;
 }

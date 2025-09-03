@@ -6,7 +6,7 @@ import Particles from "../assets/Particles";
 function Home() {
   return (
     <>
-    <div className="home-bg">
+    {/* <div className="home-bg">
       <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={500}
@@ -17,7 +17,7 @@ function Home() {
             alphaParticles={false}
             disableRotation={false}
         />
-    </div>
+    </div> */}
     <div className="home">
       <section className="intro">
         <h1>TAM-VIT</h1>
