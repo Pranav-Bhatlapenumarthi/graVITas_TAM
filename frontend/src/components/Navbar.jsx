@@ -4,7 +4,7 @@ import "./Navbar.css";
 function Navbar(){
     return(
         <nav className="navbar">
-            <h2>TAM</h2>
+            <img src="./tam_logo.png " alt="tam_logo"></img>
             <ul className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li className="dropdown">

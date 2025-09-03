@@ -83,3 +83,8 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+img{
+  height: 4%;
+  width: 4%;
+}
