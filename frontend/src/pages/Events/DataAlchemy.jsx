@@ -25,14 +25,6 @@ function DataAlchemy() {
         <li>All solutions must be original.</li>
         <li>Time limit: 2 hours.</li>
       </ul>
-
-      <h2>Register</h2>
-      <a href="your-custom-form-link" target="_blank" rel="noreferrer">
-        <button>Register on Our Site</button>
-      </a>
-      <a href="vit-gravitas-link" target="_blank" rel="noreferrer">
-        <button>Register on VIT Gravitas</button>
-      </a>
     </div>
     </>
   );
