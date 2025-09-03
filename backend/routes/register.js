@@ -1,24 +1,78 @@
 const express = require("express");
+const { supabase } = require("../lib/supabaseClient.js");
 const router = express.Router();
 
-function generateTeamID() {
-  return Math.floor(1000 + Math.random() * 9000).toString();
+function generateRandomString() {
+  return Math.random().toString(36).substring(2, 8);
 }
 
-router.post("/leader", (req, res) => {
-//   const { name, regNo, email, phone, teamName, numMembers } = req.body;
+console.log(generateRandomString());
 
-  res.json({ message: "Team created successfully" });
+router.post("/member", async (req, res) => {
+	const { name, regNo, email, phone, teamcode } = req.body;
+	
+	const { data, error } = await supabase
+		.from('users')
+		.insert({
+			name: name,
+			reg_no: regNo,
+			email: email,
+			phone: phone,
+			teamcode: teamcode
+		})
+
+	if (error) {
+		console.log(error);
+		return error;
+	} else {
+		res.json({
+			name: name,
+			reg_no: regNo
+		});
+	}
 });
 
-router.post("/member", (req, res) => {
-//   const { name, regNo, email, phone, teamID, teamName } = req.body;
+router.post("/team", async (req, res) => {
+	const { name, event } = req.body;
+	const rnTeamCode = generateRandomString();
 
-  res.json({ message: "Member added successfully" });
+	const { data, error } = await supabase
+		.from('teams')
+		.insert({
+			team_name: name,
+			team_id_code: rnTeamCode,
+			event_name: event
+		})
+
+	if (error) {
+		console.log(error);
+		return error;
+	} else {
+		res.json({ teamcode: rnTeamCode });
+	}
 });
 
-router.get("/teams", (req, res) => {
-  res.json(teams);
+router.post("/updateLeader", async (req, res) => {
+	const { teamcode, regNo } = req.body;
+	
+	const { data, error } = await supabase
+		.from("teams")
+		.update({ leader_reg_no: regNo })
+		.eq("team_id_code", teamcode)
+		.select("*")
+		;
+
+	if (error) {
+		console.log(error);
+		return error;
+	} else {
+		res.json({ 
+			teamcode: teamcode,
+			leader: regNo
+		});
+		console.log('ghapla');
+		console.log(data);
+	}
 });
 
 module.exports = router;
