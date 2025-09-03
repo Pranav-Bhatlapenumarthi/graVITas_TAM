@@ -2,17 +2,14 @@ const express = require("express");
 const { supabase } = require("../lib/supabaseClient.js");
 const router = express.Router();
 
-function generateTeamID() {
-	return Math.floor(1000 + Math.random() * 9000).toString();
+function generateRandomString() {
+  return Math.random().toString(36).substring(2, 8);
 }
 
-// change this back to post
-router.get("/check", async (req, res) => {
-	// const { name, regNo, email, phone } = req.body;
-	const name = "Jackson West";
-	const regNo = "18LAPD33356";
-	const email = "iwantobecomepoliceman@lapd.com";
-	const phone = "7980455545";
+console.log(generateRandomString());
+
+router.post("/member", async (req, res) => {
+	const { name, regNo, email, phone, teamcode } = req.body;
 	
 	const { data, error } = await supabase
 		.from('users')
@@ -20,27 +17,62 @@ router.get("/check", async (req, res) => {
 			name: name,
 			reg_no: regNo,
 			email: email,
-			phone: phone
+			phone: phone,
+			teamcode: teamcode
 		})
 
 	if (error) {
 		console.log(error);
 		return error;
 	} else {
+		res.json({
+			name: name,
+			reg_no: regNo
+		});
+	}
+});
+
+router.post("/team", async (req, res) => {
+	const { name, event } = req.body;
+	const rnTeamCode = generateRandomString();
+
+	const { data, error } = await supabase
+		.from('teams')
+		.insert({
+			team_name: name,
+			team_id_code: rnTeamCode,
+			event_name: event
+		})
+
+	if (error) {
+		console.log(error);
+		return error;
+	} else {
+		res.json({ teamcode: rnTeamCode });
+	}
+});
+
+router.post("/updateLeader", async (req, res) => {
+	const { teamcode, regNo } = req.body;
+	
+	const { data, error } = await supabase
+		.from("teams")
+		.update({ leader_reg_no: regNo })
+		.eq("team_id_code", teamcode)
+		.select("*")
+		;
+
+	if (error) {
+		console.log(error);
+		return error;
+	} else {
+		res.json({ 
+			teamcode: teamcode,
+			leader: regNo
+		});
+		console.log('ghapla');
 		console.log(data);
 	}
-	res.json({ message: "ghapla happened successfully" });
-});
-
-router.post("/member", (req, res) => {
-	//   const { name, regNo, email, phone, teamID, teamName } = req.body;
-
-	res.json({ message: "Member added successfully" });
-});
-
-router.get("/teams", (req, res) => {
-	const teams = "holo bhai?";
-	res.json(teams);
 });
 
 module.exports = router;
