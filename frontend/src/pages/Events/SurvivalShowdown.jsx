@@ -5,14 +5,6 @@ import { Link } from "react-router-dom";
 function SurvivalShowdown() {
   return (
     <>
-    {/* <div className="event-bg">
-      <LetterGlitch
-        glitchSpeed={50}
-        centerVignette={true}
-        outerVignette={false}
-        smooth={true}
-      />
-    </div> */}
     <div className="event-detail">
       <h1>Survival Showdown</h1>
       <p>
@@ -29,7 +21,7 @@ function SurvivalShowdown() {
       {/* <a href="register/team" target="_blank" rel="noreferrer">
         <button>Click for Team Formation</button>
       </a> */}
-      <Link to="/register/team" className="team-link">Click for Team Registration</Link>
+      <Link to="/register/team/survival-showdown" className="team-link">Click for Team Registration</Link>
       <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
         <button>Register on VIT Gravitas</button>
       </a>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Team.css";
 
-function Team() {
+function Team({eventName}) {
   const [role, setRole] = useState(""); // leader or member
   const [teamId, setTeamId] = useState(""); // auto-generated for leader
   const [formData, setFormData] = useState({
@@ -18,18 +18,17 @@ function Team() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const generateTeamId = () => {
-    // Generate 4-digit random ID (backend will replace later)
-    const id = Math.floor(1000 + Math.random() * 9000).toString();
-    setTeamId(id);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send to backend later
-    console.log("Submitted Data:", { role, teamId, ...formData });
-    alert("Form submitted! Check console for data.");
+    const payload = {
+      event: eventName,
+      role,
+      teamId,
+      ...formData
+    };
+    console.log("Submitted Data:", payload);
+    alert(`Form successfully submitted for ${eventName}`);
   };
 
   return (

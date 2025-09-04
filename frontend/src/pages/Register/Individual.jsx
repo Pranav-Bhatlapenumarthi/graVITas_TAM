@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Team.css";
 
-function Individual() {
+function Individual({eventName}) {
   const [formData, setFormData] = useState({
     name: "",
     regNumber: "",
@@ -16,8 +16,12 @@ function Individual() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submitted Data:", formData);
-    alert("Form submitted! Check console for data.");
+    const payload = {
+      event: eventName,
+      ...formData
+    };
+    console.log("Submitted Data:", payload);
+    alert(`Form successfully submitted for ${eventName}`);
   };
 
   return (

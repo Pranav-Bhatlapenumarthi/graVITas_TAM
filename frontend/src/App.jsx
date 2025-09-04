@@ -17,8 +17,9 @@ function App(){
         <Route path="/events/survival-showdown" element={<SurvivalShowdown />} />
         <Route path="/events/data-alchemy" element={<DataAlchemy />} />
         <Route path="/events/hackathon" element={<Hackathon />} />
-        <Route path="/register/team" element={<Team />} />
-        <Route path="/register/individual" element={<Individual />} />
+        <Route path="/register/team/hackathon" element={<Team eventName="Hackathon" />} />
+        <Route path="/register/team/survival-showdown" element={<Team eventName="Survival-Showdown"/>} />
+        <Route path="/register/individual/data-alchemy" element={<Individual eventName="Data Alchemy"/>} />
         </Routes>
       <Footer />
     </Router>

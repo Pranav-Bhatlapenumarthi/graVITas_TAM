@@ -61,7 +61,7 @@ function MenuItem({ link, text, image }) {
       .to(marqueeInnerRef.current, { y: edge === 'top' ? '101%' : '-101%' }, 0);
   };
 
-  const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
+  const repeatedMarqueeContent = Array.from({ length: 10 }).map((_, idx) => (
     <React.Fragment key={idx}>
       <span>{text}</span>
       <div className="marquee__img" style={{ backgroundImage: `url(${image})` }} />
