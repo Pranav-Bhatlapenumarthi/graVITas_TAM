@@ -1,10 +1,9 @@
-// Team.jsx
 import React, { useState } from "react";
 import "./Team.css";
 
-function Team({eventName}) {
-  const [role, setRole] = useState(""); // leader or member
-  const [teamId, setTeamId] = useState(""); // auto-generated for leader
+function Team({ eventName }) {
+  const [role, setRole] = useState("");
+  const [teamId, setTeamId] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     regNumber: "",
@@ -21,33 +20,73 @@ function Team({eventName}) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+
+    var teamId;
+
     const payload = {
       event: eventName,
-      role,
-      teamId,
-      ...formData
+      name: formData.teamName
     };
-    
-    fetch('/api/register', {
+
+    fetch('https://gravitas-tam-backend.onrender.com/api/register/team', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
-    .then(res => res.json())
-    .then(data => {
-      alert(data.message || "Registration successful !")
-    })
-    .catch(err => {
-      alert("Registration failed !");
-    })
+      .then(res => res.json())
+      .then(data => {
+        alert(`Registration successful ! Team Id: ${data.teamcode}`);
+        teamId = data.teamcode;
+        const payload2 = {
+          name: formData.name,
+          regNo: formData.regNumber,
+          email: formData.email,
+          phone: formData.phone,
+          teamcode: teamId
+        };
+        const payload3 = {
+          teamcode: teamId,
+          regNo: formData.regNumber
+        }
+        fetch('https://gravitas-tam-backend.onrender.com/api/register/member', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload2)
+        })
+          .then(res => res.json())
+        fetch('https://gravitas-tam-backend.onrender.com/api/register/updateLeader', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload3)
+        })
+          .then(res => res.json())
+          .then(data => {
+            alert(`Updated team !`);
+          })
+          .catch(err => {
+            alert("Update failed !");
+          })
+
+          // alert(`Registration successful !`);
+          .then(data => {
+            alert(`Registration successful !`);
+          })
+          .catch(err => {
+            alert("Registration failed !");
+          })
+        console.log(teamId)
+      })
+      .catch(err => {
+        alert("Registration failed !");
+      })
   };
+
+
 
   return (
     <div className="form-container">
       <h1>Team Registration</h1>
       <p>For Survival Showdown / Hackathon</p>
-
-      {/* Role Selection */}
       <div className="role-selector">
         <label>
           <input
@@ -57,7 +96,6 @@ function Team({eventName}) {
             checked={role === "leader"}
             onChange={() => {
               setRole("leader");
-              generateTeamId(); // auto-generate Team ID
             }}
           />
           Register as Team Leader
