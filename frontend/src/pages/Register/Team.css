@@ -4,7 +4,7 @@
   padding: 30px;
   background: #1a1a1a;
   border-radius: 12px;
-  border: 2px solid #ffcc66;
+  border: 2px solid #257df9;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
   color: #fff;
   font-family: "Playfair Display", serif;
@@ -12,7 +12,7 @@
 }
 
 .form-container h1 {
-  color: #ffcc66;
+  color: #257df9;
   margin-bottom: 10px;
   font-size: 2rem;
 }
@@ -55,7 +55,7 @@
 }
 
 .submit-btn {
-  background: #ffcc66;
+  background: #257df9;
   color: #1a1a1a;
   font-weight: bold;
   padding: 12px;
