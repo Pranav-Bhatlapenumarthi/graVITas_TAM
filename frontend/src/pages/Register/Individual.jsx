@@ -20,8 +20,19 @@ function Individual({eventName}) {
       event: eventName,
       ...formData
     };
-    console.log("Submitted Data:", payload);
-    alert(`Form successfully submitted for ${eventName}`);
+    
+    fetch('/api/register', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert(data.message || "Registration successful !")
+    })
+    .catch(err => {
+      alert("Registration failed !");
+    })
   };
 
   return (
