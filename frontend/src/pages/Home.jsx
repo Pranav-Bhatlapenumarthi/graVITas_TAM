@@ -1,29 +1,37 @@
 import "./Home.css";
 import React from "react";
 import PixelCard from "../assets/PixelCard";
-import Particles from "../assets/Particles";
+import Aurora from "../assets/Aurora";
+import FlowingMenu from "../assets/FlowingMenu";
+
+const demoItems = [
+  { link: '#', text: 'Collaborate'},
+  { link: '#', text: 'Innovate' },
+  { link: '#', text: 'Empower' },
+];
 
 function Home() {
   return (
     <>
-    {/* <div className="home-bg">
-      <Particles
-            particleColors={['#ffffff', '#ffffff']}
-            particleCount={500}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={100}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
-            disableRotation={false}
-        />
-    </div> */}
     <div className="home">
+      <div className="aurora-wrapper">
+        <Aurora
+          colorStops={["#0077b6", "#00b4d8", "#03045e"]}
+          blend={0.5}
+          amplitude={1.0}
+        />
+      </div>
       <section className="intro">
         <h1>TAM-VIT</h1>
-        <p>Our mission is to make Artificial Intelligence more approachable for students to learn and develop, and more accessible for the
-          consumers to inculcate in their daily lives. We plan to focus and pivot the technical enthusiasm towards ML and AI, while retaining
-          unwavering focus on developing fundamental technicals skills which are non-negotiable in this domain. </p>
+        <p>Our mission is to make Artificial Intelligence more accessible to students while developing tools that serve the needs of consumers</p>
+
+        <h1>What we stand for</h1>
+      </section>
+
+      <section className="menu-scroll">
+        <div style={{ height: '300px', position: 'relative' }}>
+          <FlowingMenu items={demoItems} />
+        </div>
       </section>
 
       <section className="events">

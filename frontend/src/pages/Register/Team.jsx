@@ -144,14 +144,6 @@ function Team() {
                 onChange={handleChange}
                 required
               />
-              <input
-                type="text"
-                name="teamName"
-                placeholder="Team Name"
-                value={formData.teamName}
-                onChange={handleChange}
-                required
-              />
             </>
           )}
 

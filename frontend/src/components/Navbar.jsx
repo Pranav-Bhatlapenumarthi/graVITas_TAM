@@ -8,7 +8,7 @@ function Navbar(){
             <ul className="nav-links">
                 <li><Link to="/">Home</Link></li>
                 <li className="dropdown">
-                    <Link className="dropbtn" to="/events">Events</Link>
+                    <Link className="dropbtn">Events</Link>
                     <div className="dropdown-content">
                         <Link to="/events/survival-showdown">Survival Showdown</Link>
                         <Link to="/events/data-alchemy">Data Alchemy</Link>

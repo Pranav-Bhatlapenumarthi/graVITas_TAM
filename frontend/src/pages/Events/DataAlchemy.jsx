@@ -1,6 +1,5 @@
 import React from "react";
 import "./IndividualEvent.css"
-import LetterGlitch from "../../assets/LetterGlitch";
 import { Link } from "react-router-dom";
 
 function DataAlchemy() {
