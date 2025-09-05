@@ -5,30 +5,23 @@ body {
 
 .navbar {
   background: black;
-  padding: 20px 30px;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between; 
   align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
+  box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   gap: 10px;
-  padding: 0;
   margin: 0;
-}
-
-.navbar h2 {
-  color: white;
-  margin: 0;
-  font-size: 20px;
 }
 
 .navbar a {
@@ -36,7 +29,8 @@ body {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
-  padding: 16px; 
+  padding: 0.75rem 1rem; 
+  margin: 5px;
   border-radius: 6px;
   transition: all 0.3s ease;
   white-space: nowrap;
@@ -85,6 +79,6 @@ body {
 }
 
 img{
-  height: 4%;
-  width: 4%;
+  height: 5%;
+  width: 5%;
 }
