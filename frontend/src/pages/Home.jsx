@@ -22,7 +22,7 @@ function Home() {
         />
       </div>
       <section className="intro">
-        <h1>TAM-VIT</h1>
+        <h1>The AI ML Club</h1>
         <p>Our mission is to make Artificial Intelligence more accessible to students while developing tools that serve the needs of consumers</p>
 
         <h1>What we stand for</h1>
@@ -53,7 +53,7 @@ function Home() {
 
            <div className="event-card">
               <PixelCard variant="blue">
-                <h3>Hackathon</h3>
+                <h3>Code Cortex</h3>
                 <p>
                   Collaborate, innovate, and build exciting projects in a 24-hour
                   hackathon. 

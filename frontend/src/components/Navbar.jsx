@@ -12,7 +12,7 @@ function Navbar(){
                     <div className="dropdown-content">
                         <Link to="/events/survival-showdown">Survival Showdown</Link>
                         <Link to="/events/data-alchemy">Data Alchemy</Link>
-                        <Link to="/events/hackathon">Hackathon</Link>
+                        <Link to="/events/hackathon">Code Cortex</Link>
                     </div>
                 </li>
                 <li><Link to="/contact">Get in Touch</Link></li>

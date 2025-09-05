@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import SurvivalShowdown from "./pages/Events/SurvivalShowdown.jsx";
-import Hackathon from "./pages/Events/Hackathon.jsx";
+import CodeCortex from "./pages/Events/CodeCortex.jsx";
 import DataAlchemy from "./pages/Events/DataAlchemy.jsx";
 import Team from "./pages/Register/Team.jsx";
 import Individual from "./pages/Register/Individual.jsx";
@@ -16,8 +16,8 @@ function App(){
         <Route path="/" element={<Home />} />
         <Route path="/events/survival-showdown" element={<SurvivalShowdown />} />
         <Route path="/events/data-alchemy" element={<DataAlchemy />} />
-        <Route path="/events/hackathon" element={<Hackathon />} />
-        <Route path="/register/team/hackathon" element={<Team eventName="hackathon" />} />
+        <Route path="/events/hackathon" element={<CodeCortex />} />
+        <Route path="/register/team/hackathon" element={<Team eventName="code-cortex" />} />
         <Route path="/register/team/survival-showdown" element={<Team eventName="survival-showdown"/>} />
         <Route path="/register/individual/data-alchemy" element={<Individual eventName="data-alchemy"/>} />
         </Routes>

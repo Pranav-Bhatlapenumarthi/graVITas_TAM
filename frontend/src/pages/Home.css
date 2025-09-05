@@ -26,6 +26,11 @@ body{
     margin-bottom: 15px;
     padding-top: 11%;
     padding-bottom: 3%;
+    text-shadow:
+      -2px -2px 0 #000,
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000;
 }
 
 .intro p {

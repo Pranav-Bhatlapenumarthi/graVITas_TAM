@@ -4,26 +4,31 @@ import { Link } from "react-router-dom";
 
 function DataAlchemy() {
   return (
-    <>
+    <div className="event-bg">
     <div className="event-detail">
-      <h1>Data Alchemy</h1>
-      <p>
-        A fun and challenging event where participants tackle coding puzzles
-        under time constraints.
-      </p>
+      <div className="event-pic">
+        <img src="/data_alchemy.jpg" alt="data_alchemy" />
+      </div>
 
-      <h2>Rules</h2>
-      <ul>
-        <li>Teams of up to 3 members.</li>
-        <li>All solutions must be original.</li>
-        <li>Time limit: 2 hours.</li>
-      </ul>
-      <Link to="/register/individual/data-alchemy" className="team-link">Click for Registration</Link>
-      <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
-        <button>Register on VIT Gravitas</button>
-      </a>
+      <div className="event-content">
+        <h1 className="event-title">Data Alchemy</h1>
+        <p className="event-description">
+          A fun and challenging event where participants tackle coding puzzles
+          under time constraints.
+        </p>
+        <div className="details">
+          <p>Venue: Anna Auditorium</p>
+          <p>Time: 9:00 am - 9:00 pm</p>
+          <p>Date: 28th Sept, 2025</p>
+          <p>Team size: 3</p>
+        </div>
+        <Link to="/register/individual/data-alchemy" className="team-link">Click for Team Registration</Link>
+        <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
+          <button>Register on VIT Gravitas</button>
+        </a>
+      </div>
     </div>
-    </>
+  </div>
   );
 }
 
