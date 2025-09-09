@@ -15,7 +15,7 @@ function Navbar(){
                         <Link to="/events/hackathon">Code Cortex</Link>
                     </div>
                 </li>
-                <li><Link to="/contact">Get in Touch</Link></li>
+                <li><Link to="/contactus">Get in Touch</Link></li>
             </ul>
         </nav>
     );
