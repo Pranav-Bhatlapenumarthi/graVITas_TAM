@@ -22,7 +22,7 @@ function DataAlchemy() {
           <p>Date: 28th Sept, 2025</p>
           <p>Team size: 3</p>
         </div>
-        <Link to="/register/individual/data-alchemy" className="team-link">Click for Team Registration</Link>
+        <Link to="/register/individual/data-alchemy" className="team-link">Click for Registration</Link>
         <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
           <button>Register on VIT Gravitas</button>
         </a>

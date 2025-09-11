@@ -61,16 +61,16 @@ function Team({ eventName }) {
         })
           .then(res => res.json())
           .then(data => {
-            alert(`Updated team !`);
+            console.log(`Updated team !`);
           })
           .catch(err => {
-            alert("Update failed !");
+            console.log("Update failed !");
           })
           .then(data => {
-            alert(`Registration successful !`);
+            console.log(`Registration successful !`);
           })
           .catch(err => {
-            alert("Registration failed !");
+            console.log("Registration failed !");
           })
         console.log(teamId)
       })
