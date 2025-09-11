@@ -84,42 +84,12 @@ function Individual({eventName}) {
       <p>For Data Alchemy</p>
 
       <form onSubmit={handleSubmit} className="event-form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="regNumber"
-          placeholder="Registration Number"
-          value={formData.regNumber}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Mail ID"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="phone"
-          placeholder="Contact Number"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
+        <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+        <input type="text" name="regNumber" placeholder="Registration Number" value={formData.regNumber} onChange={handleChange} required />
+        <input type="email" name="email" placeholder="Mail ID" value={formData.email} onChange={handleChange} required />
+        <input type="text" name="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} required/>
 
-        <button type="submit" className="submit-btn">
-          Submit Registration
-        </button>
+        <button type="submit" className="submit-btn">Submit Registration</button>
       </form>
     </div>
   );

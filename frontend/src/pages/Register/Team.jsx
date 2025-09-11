@@ -66,8 +66,6 @@ function Team({ eventName }) {
           .catch(err => {
             alert("Update failed !");
           })
-
-          // alert(`Registration successful !`);
           .then(data => {
             alert(`Registration successful !`);
           })
@@ -89,11 +87,7 @@ function Team({ eventName }) {
       <p>For Survival Showdown / Hackathon</p>
       <div className="role-selector">
         <label>
-          <input
-            type="radio"
-            name="role"
-            value="leader"
-            checked={role === "leader"}
+          <input type="radio" name="role" value="leader" checked={role === "leader"}
             onChange={() => {
               setRole("leader");
             }}
@@ -102,11 +96,7 @@ function Team({ eventName }) {
         </label>
 
         <label>
-          <input
-            type="radio"
-            name="role"
-            value="member"
-            checked={role === "member"}
+          <input type="radio" name="role" value="member" checked={role === "member"}
             onChange={() => {
               setRole("member");
               setTeamId(""); // members don’t generate IDs
@@ -119,60 +109,16 @@ function Team({ eventName }) {
       {role && (
         <form onSubmit={handleSubmit} className="event-form">
           {/* Common Data */}
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            name="regNumber"
-            placeholder="Registration Number"
-            value={formData.regNumber}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Mail ID"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            name="phone"
-            placeholder="Contact Number"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
+          <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+          <input type="text" name="regNumber" placeholder="Registration Number" value={formData.regNumber} onChange={handleChange} required />
+          <input type="email" name="email" placeholder="Mail ID" value={formData.email} onChange={handleChange} required />
+          <input type="text" name="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} required />
 
           {/* Team Leader Fields */}
           {role === "leader" && (
             <>
-              <input
-                type="text"
-                name="teamName"
-                placeholder="Team Name"
-                value={formData.teamName}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="number"
-                name="memberCount"
-                placeholder="Number of Team Members (max 3)"
-                value={formData.memberCount}
-                onChange={handleChange}
-                min="1"
-                max="3"
-                required
-              />
+              <input type="text" name="teamName" placeholder="Team Name" value={formData.teamName} onChange={handleChange} required />
+              <input type="number" name="memberCount" placeholder="Number of Team Members (max 3)" value={formData.memberCount} onChange={handleChange} min="1" max="3" required />
               {teamId && (
                 <p className="team-id">
                   <strong>Your Team ID:</strong> {teamId}
@@ -181,17 +127,9 @@ function Team({ eventName }) {
             </>
           )}
 
-          {/* Team Member Fields */}
           {role === "member" && (
             <>
-              <input
-                type="text"
-                name="teamId"
-                placeholder="Team ID (from Leader)"
-                value={formData.teamId}
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="teamId" placeholder="Team ID (from Leader)" value={formData.teamId} onChange={handleChange} required />
             </>
           )}
 
