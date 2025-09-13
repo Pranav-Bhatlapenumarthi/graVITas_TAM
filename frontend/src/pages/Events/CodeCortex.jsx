@@ -11,21 +11,22 @@ function CodeCortex() {
       </div>
 
       <div className="event-content">
-        <h1 className="event-title">Code Cortex</h1>
+        <h1 className="event-title">Code Cortex 2.0</h1>
         <p className="event-description">
-          A fun and challenging event where participants tackle coding puzzles
-          under time constraints.
+          The ultimate innovation race: Code, Create and Conquer!
+        </p>
+        <p className="description">
+          An electrifying hackathon where innovation meets adrenaline! This high-energy event units brilliant minds to 
+          tackle real-world challenges, unleash cutting-edge code, and build game-changing solutions.
         </p>
         <div className="details">
-          <p>Venue: Anna Auditorium</p>
-          <p>Time: 9:00 am - 9:00 pm</p>
-          <p>Date: 28th Sept, 2025</p>
-          <p>Team size: 3</p>
+          <p>Venue: Shakespeare Gallery</p>
+          <p>Date: 26th Sept, 2025 - 27th Sept, 2025</p>
+          <p>Time: 10:00 am - 8:00 pm</p>
+          <p>Team size: 4</p>
+          <p>Registration Fee (per person): Rs. 215/-</p>
         </div>
-        <Link to="/register/team/hackathon" className="team-link">Click for Team Registration</Link>
-        <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
-          <button>Register on VIT Gravitas</button>
-        </a>
+        <Link to="/register/team/hackathon" className="team-link">Click to Register</Link>
       </div>
     </div>
   </div>

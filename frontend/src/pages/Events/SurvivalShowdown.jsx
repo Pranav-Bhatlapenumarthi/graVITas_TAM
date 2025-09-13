@@ -13,19 +13,21 @@ function SurvivalShowdown() {
       <div className="event-content">
         <h1 className="event-title">Survivial Showdown</h1>
         <p className="event-description">
-          A fun and challenging event where participants tackle coding puzzles
-          under time constraints.
+          Get ready for an adrenaline fueled event!
+        </p>
+        <p className="description">
+          The Competitive Escape Room - a pulse-pounding event packed with mind-bending puzzles
+          and challenges that push your problem-solving and teamwork skills to the limit. It's an 
+          immersive, high-stakes experience where logic meets adrenaline.
         </p>
         <div className="details">
-          <p>Venue: Anna Auditorium</p>
-          <p>Time: 9:00 am - 9:00 pm</p>
-          <p>Date: 28th Sept, 2025</p>
-          <p>Team size: 3</p>
+          <p>Venue: Mahatma Gandhi Block - 308</p>
+          <p>Date: 21st Sept, 2025</p>
+          <p>Time: 9:00 am - 8:00 pm</p>
+          <p>Team size: 4</p>
+          <p>Registration Fee (per person): Rs.150/-</p>
         </div>
-        <Link to="/register/team/survival-showdown" className="team-link">Click for Team Registration</Link>
-        <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
-          <button>Register on VIT Gravitas</button>
-        </a>
+        <Link to="/register/team/survival-showdown" className="team-link">Click to Register</Link>
       </div>
     </div>
   </div>

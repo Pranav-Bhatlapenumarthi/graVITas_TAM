@@ -11,21 +11,21 @@ function DataAlchemy() {
       </div>
 
       <div className="event-content">
-        <h1 className="event-title">Data Alchemy</h1>
-        <p className="event-description">
-          A fun and challenging event where participants tackle coding puzzles
-          under time constraints.
+        <h1 className="event-title">Data Alchemy 3.0</h1>
+        <p className="description">
+          A dynamic workshop where brilliant minds dive into data analysis and visualization,
+          turning raw info into powerful insights. It's a magnet for top talent ready to transform
+          numbers into magic! From foundational concepts to advanced techniques, we'll cover it hands-on,
+          practical and designed to take you from beginner to master.
         </p>
         <div className="details">
-          <p>Venue: Anna Auditorium</p>
-          <p>Time: 9:00 am - 9:00 pm</p>
-          <p>Date: 28th Sept, 2025</p>
-          <p>Team size: 3</p>
+          <p>Venue: Shakespeare Gallery</p>
+          <p>Date: 24th Sept, 2025</p>
+          <p>Time: 9:00 am - 7:00 pm</p>
+          <p>Team size: 1</p>
+          <p>Registration Fee (per person): Rs.175/-</p>
         </div>
-        <Link to="/register/individual/data-alchemy" className="team-link">Click for Registration</Link>
-        <a href="https://vit.ac.in/" target="_blank" rel="noreferrer">
-          <button>Register on VIT Gravitas</button>
-        </a>
+        <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link>
       </div>
     </div>
   </div>
