@@ -24,7 +24,6 @@ function Home() {
       <section className="intro">
         <h1>The AI ML Club</h1>
         <p>Our mission is to make Artificial Intelligence more accessible to students while developing tools that serve the needs of consumers</p>
-
         <h1>What we stand for</h1>
       </section>
 
@@ -40,11 +39,8 @@ function Home() {
           <div className="event-card">
             <PixelCard variant="blue">
               <h3>Survival Showdown</h3>
-              <p>
-                A thrilling coding challenge where participants must survive
-                through rounds of problem-solving. 
-              </p>
-              <span>Date: 15th Sept 2025</span>
+              <p>Get ready for an adrenaline fueled event! A thrilling coding challenge where participants must survive
+                through rounds of problem-solving. </p>
           </PixelCard>
             <button onClick={() => (window.location.href = "/events/survival-showdown")}>
               Register Now
@@ -53,12 +49,9 @@ function Home() {
 
            <div className="event-card">
               <PixelCard variant="blue">
-                <h3>Code Cortex</h3>
-                <p>
-                  Collaborate, innovate, and build exciting projects in a 24-hour
-                  hackathon. 
-                </p>
-                <span>Date: 22nd Sept 2025</span>
+                <h3>Code Cortex 2.0</h3>
+                <p>The ultimate innovation race: Code, Create and Conquer! Collaborate, innovate, and build exciting projects in this intensive
+                  hackathon. </p>
               </PixelCard>
               <button onClick={() => (window.location.href = "/events/hackathon")}>
               Register Now
@@ -67,12 +60,9 @@ function Home() {
 
           <div className="event-card">
             <PixelCard variant="blue">
-              <h3>Data Alchemy</h3>
-              <p>
-                A data-driven competition where participants transform raw data
-                into powerful insights.
-              </p>
-              <span>Date: 5th Oct 2025</span>
+              <h3>Data Alchemy 3.0</h3>
+              <p>From foundational concepts to advanced techniques, we'll cover it hands-on, practical and designed to take you from 
+                beginner to master.</p>
             </PixelCard>
             <button onClick={() => (window.location.href = "/events/data-alchemy")}>
               Register Now
