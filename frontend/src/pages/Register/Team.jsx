@@ -5,12 +5,7 @@ function Team({ eventName }) {
   const [role, setRole] = useState("");
   const [teamId, setTeamId] = useState("");
   const [formData, setFormData] = useState({
-    name: "",
-    regNumber: "",
-    email: "",
-    phone: "",
-    teamName: "",
-    memberCount: ""
+    name: "", regNumber: "", email: "", phone: "", teamName: "", memberCount: ""
   });
 
   const handleChange = (e) => {
@@ -19,8 +14,6 @@ function Team({ eventName }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-
     var teamId;
 
     const payload = {
@@ -37,6 +30,7 @@ function Team({ eventName }) {
       .then(data => {
         alert(`Registration successful ! Team Id: ${data.teamcode}`);
         teamId = data.teamcode;
+        console.log(teamId)
         const payload2 = {
           name: formData.name,
           regNo: formData.regNumber,
@@ -52,8 +46,7 @@ function Team({ eventName }) {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload2)
-        })
-          .then(res => res.json())
+        }).then(res => res.json())
         fetch('https://gravitas-tam-backend.onrender.com/api/register/updateLeader', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -61,49 +54,41 @@ function Team({ eventName }) {
         })
           .then(res => res.json())
           .then(data => {
-            console.log(`Updated team !`);
+            console.log("Updated team !");
+            if(eventName.toLowerCase() === "code-cortex"){
+              window.location.href = "https://gravitas.vit.ac.in/events/0f3f4ce7-5e02-488c-8187-1b18f3407a01";             
+            }
           })
           .catch(err => {
             console.log("Update failed !");
           })
-          .then(data => {
-            console.log(`Registration successful !`);
-          })
           .catch(err => {
             console.log("Registration failed !");
           })
-        console.log(teamId)
       })
       .catch(err => {
         alert("Registration failed !");
       })
   };
 
-
-
   return (
     <div className="form-container">
       <h1>Team Registration</h1>
-      <p>For Survival Showdown / Hackathon</p>
       <div className="role-selector">
         <label>
           <input type="radio" name="role" value="leader" checked={role === "leader"}
             onChange={() => {
               setRole("leader");
             }}
-          />
-          Register as Team Leader
-        </label>
+          /> Register as Team Leader</label>
 
         <label>
           <input type="radio" name="role" value="member" checked={role === "member"}
             onChange={() => {
               setRole("member");
-              setTeamId(""); // members don’t generate IDs
+              // setTeamId(""); // members don’t generate IDs
             }}
-          />
-          Register as Team Member
-        </label>
+          />Register as Team Member</label>
       </div>
 
       {role && (
@@ -118,10 +103,11 @@ function Team({ eventName }) {
           {role === "leader" && (
             <>
               <input type="text" name="teamName" placeholder="Team Name" value={formData.teamName} onChange={handleChange} required />
-              <input type="number" name="memberCount" placeholder="Number of Team Members (max 3)" value={formData.memberCount} onChange={handleChange} min="1" max="3" required />
+              <input type="number" name="memberCount" placeholder="Number of Team Members (max 4)" value={formData.memberCount} onChange={handleChange} min="1" max="4" required />
               {teamId && (
                 <p className="team-id">
-                  <strong>Your Team ID:</strong> {teamId}
+                  <strong>Your Team ID:</strong> 
+                  {teamId}
                 </p>
               )}
             </>
@@ -133,9 +119,7 @@ function Team({ eventName }) {
             </>
           )}
 
-          <button type="submit" className="submit-btn">
-            Submit Registration
-          </button>
+          <button type="submit" className="submit-btn"> Submit Registration </button>
         </form>
       )}
     </div>

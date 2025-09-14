@@ -1,13 +1,12 @@
-// Individual.jsx
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import "./Team.css";
+import { useNavigate } from "react-router-dom";
+
 
 function Individual({ eventName }) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
-    regNumber: "",
-    email: "",
-    phone: ""
+    name: "", regNumber: "", email: "", phone: ""
   });
 
   const handleChange = (e) => {
@@ -19,7 +18,6 @@ function Individual({ eventName }) {
     const payload = {
       event: eventName,
       name: "2345-single",
-      // ...formData
     };
 
     var teamId;
@@ -56,7 +54,8 @@ function Individual({ eventName }) {
         })
           .then(res => res.json())
           .then(data => {
-            console.log(`Updated team !`);
+            console.log("Updated team !");
+            window.location.href = "https://gravitas.vit.ac.in/events/7a6dd3c9-e4c6-4e69-adf7-e7141ac2ec4e";
           })
           .catch(err => {
             console.log("Update failed !");
@@ -67,65 +66,12 @@ function Individual({ eventName }) {
           .catch(err => {
             console.log("Registration failed !");
           })
-        console.log(teamId)
       })
       .catch(err => {
         alert("Registration failed !");
       })
-    //   fetch('https://gravitas-tam-backend.onrender.com/api/register/team', {
-    //     method: 'POST',
-    //     headers: {'Content-Type': 'application/json'},
-    //     body: JSON.stringify(payload)
-    //   })
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     alert(`Registration successful !`);
-    //     teamId = data.teamcode;
-    //     console.log(teamId)
-    //   })
-    //   .catch(err => {
-    //     alert("Registration failed !");
-    //   })
 
-    //   const payload2 = {
-    //     name: formData.name,
-    //     regNo: formData.regNumber, 
-    //     email: formData.email, 
-    //     phone: formData.phone, 
-    //     teamcode: teamId
-    //   };
-
-    //   fetch('https://gravitas-tam-backend.onrender.com/api/register/member', {
-    //     method: 'POST',
-    //     headers: {'Content-Type': 'application/json'},
-    //     body: JSON.stringify(payload2)
-    //   })
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     alert(`Registration successful !`);
-    //   })
-    //   .catch(err => {
-    //     alert("Registration failed !");
-    //   })
-
-    //   const payload3 = {
-    //     teamcode: teamId,
-    //     regNo: formData.regNumber
-    //   }
-
-    //   fetch('https://gravitas-tam-backend.onrender.com/api/register/updateLeader', {
-    //     method: 'POST',
-    //     headers: {'Content-Type': 'application/json'},
-    //     body: JSON.stringify(payload3)
-    //   })
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     alert(`Updated team !`);
-    //   })
-    //   .catch(err => {
-    //     alert("Update failed !");
-    //   })
-  };
+    };
 
   return (
     <div className="form-container">
@@ -137,7 +83,6 @@ function Individual({ eventName }) {
         <input type="text" name="regNumber" placeholder="Registration Number" value={formData.regNumber} onChange={handleChange} required />
         <input type="email" name="email" placeholder="Mail ID" value={formData.email} onChange={handleChange} required />
         <input type="text" name="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} required />
-
         <button type="submit" className="submit-btn">Submit Registration</button>
       </form>
     </div>
