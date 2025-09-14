@@ -22,9 +22,9 @@ function Home() {
         />
       </div>
       <section className="intro">
-        <h1>The AI ML Club</h1>
-        <p>Our mission is to make Artificial Intelligence more accessible to students while developing tools that serve the needs of consumers</p>
-        <h1>What we stand for</h1>
+        <h1> The AI ML Club </h1>
+        <p> Bridging the gap between learners and Artificial Intelligence by building tools that create real impact for communities </p>
+        <h1> What we stand for </h1>
       </section>
 
       <section className="menu-scroll">

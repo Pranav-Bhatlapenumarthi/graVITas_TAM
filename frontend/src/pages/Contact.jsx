@@ -41,6 +41,7 @@ function Contact(){
 
     return(
         <div className="page-bg">
+            <img className="grp_pic" src="/tam_club_pic.jpg" alt="grp_pic"/>
             <div className="contact-container">
                 <h2>Get in touch with the TAM-Fam !!</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -52,6 +53,7 @@ function Contact(){
                 </form>
                 {status && <p className="status-msg">{status}</p>}
             </div>
+
         </div>
     );
 };
