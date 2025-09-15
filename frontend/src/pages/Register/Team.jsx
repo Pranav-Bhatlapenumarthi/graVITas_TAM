@@ -10,6 +10,8 @@ function Team({ eventName }) {
     name: "", regNumber: "", email: "", phone: "", teamName: "", memberCount: "", teamId: ""
   });
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   const betterNames = {
     "code-cortex" : "Code Cortex 2.0",
     "data-alchemy" : "Data-Alchemy 3.0",
@@ -30,7 +32,7 @@ function Team({ eventName }) {
     };
 
     if (role=="leader") {
-      fetch('https://gravitas-tam-backend.onrender.com/api/register/team', {
+      fetch(apiUrl+'api/register/team', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -52,14 +54,14 @@ function Team({ eventName }) {
             teamcode: teamId,
             regNo: formData.regNumber
           }
-          fetch('https://gravitas-tam-backend.onrender.com/api/register/member', {
+          fetch(apiUrl+'api/register/member', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload2)
           })
             .then(res => res.json())
             .then(data => {
-              fetch('https://gravitas-tam-backend.onrender.com/api/register/updateLeader', {
+              fetch(apiUrl+'api/register/updateLeader', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload3)
@@ -94,7 +96,7 @@ function Team({ eventName }) {
         leader: false
       };
     
-      fetch('https://gravitas-tam-backend.onrender.com/api/register/member', {
+      fetch(apiUrl+'api/register/member', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload2)
