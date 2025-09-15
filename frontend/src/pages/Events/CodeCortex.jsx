@@ -25,6 +25,8 @@ function CodeCortex() {
           <p>Time: 10:00 am - 8:00 pm</p>
           <p>Team size: 4</p>
           <p>Registration Fee (per person): Rs. 215/-</p>
+
+          <h3>Note: You'll be redirected to the main graVITas page for payments after registering here</h3>
         </div>
         <Link to="/register/team/hackathon" className="team-link">Click to Register</Link>
       </div>

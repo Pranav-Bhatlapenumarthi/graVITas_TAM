@@ -24,6 +24,7 @@ function DataAlchemy() {
           <p>Time: 9:00 am - 7:00 pm</p>
           <p>Team size: 1</p>
           <p>Registration Fee (per person): Rs.175/-</p>
+          <h3>Note: You'll be redirected to the main graVITas page for payments after registering here</h3>
         </div>
         <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link>
       </div>
