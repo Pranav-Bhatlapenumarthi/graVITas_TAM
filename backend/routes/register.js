@@ -9,7 +9,7 @@ function generateRandomString() {
 console.log(generateRandomString());
 
 router.post("/member", async (req, res) => {
-	const { name, regNo, email, phone, teamcode } = req.body;
+	const { name, regNo, email, phone, teamcode, leader } = req.body;
 	
 	const { data, error } = await supabase
 		.from('users')
@@ -18,7 +18,8 @@ router.post("/member", async (req, res) => {
 			reg_no: regNo,
 			email: email,
 			phone: phone,
-			teamcode: teamcode
+			teamcode: teamcode,
+			leader: leader
 		})
 
 	if (error) {
