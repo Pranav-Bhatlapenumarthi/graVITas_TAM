@@ -16,6 +16,7 @@ function Navbar(){
                     </div>
                 </li>
                 <li><Link to="/contactus">Get in Touch</Link></li>
+                <li><Link to="/devs">Meet the Devs</Link></li>
             </ul>
         </nav>
     );

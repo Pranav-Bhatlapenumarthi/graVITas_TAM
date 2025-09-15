@@ -8,6 +8,7 @@ import DataAlchemy from "./pages/Events/DataAlchemy.jsx";
 import Team from "./pages/Register/Team.jsx";
 import Individual from "./pages/Register/Individual.jsx";
 import Contact from "./pages/Contact.jsx";
+import Developers from "./pages/Developers.jsx";
 
 function App(){
   return(
@@ -22,6 +23,7 @@ function App(){
         <Route path="/register/team/survival-showdown" element={<Team eventName="survival-showdown"/>} />
         <Route path="/register/individual/data-alchemy" element={<Individual eventName="data-alchemy"/>} />
         <Route path="/contactus" element={<Contact />} />
+        <Route path="/devs" element={<Developers />}/>
         </Routes>
       <Footer />
     </Router>
