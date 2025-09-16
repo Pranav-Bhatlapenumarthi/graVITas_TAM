@@ -9,8 +9,8 @@ import Team from "./pages/Register/Team.jsx";
 import Individual from "./pages/Register/Individual.jsx";
 import Contact from "./pages/Contact.jsx";
 
-function App(){
-  return(
+function App() {
+  return (
     <Router>
       <Navbar />
       <Routes>
@@ -19,11 +19,11 @@ function App(){
         <Route path="/events/data-alchemy" element={<DataAlchemy />} />
         <Route path="/events/hackathon" element={<CodeCortex />} />
         <Route path="/register/team/hackathon" element={<Team eventName="code-cortex" />} />
-        <Route path="/register/team/survival-showdown" element={<Team eventName="survival-showdown"/>} />
-        <Route path="/register/individual/data-alchemy" element={<Individual eventName="data-alchemy"/>} />
+        <Route path="/register/team/survival-showdown" element={<Team eventName="survival-showdown" />} />
+        <Route path="/register/individual/data-alchemy" element={<Individual eventName="data-alchemy" />} />
         <Route path="/contactus" element={<Contact />} />
-        </Routes>
-      <Footer />
+      </Routes>
+      {/* <Footer /> */}
     </Router>
   );
 }
