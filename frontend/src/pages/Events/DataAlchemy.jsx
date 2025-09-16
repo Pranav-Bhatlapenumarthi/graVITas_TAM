@@ -35,7 +35,8 @@ function DataAlchemy() {
               <p>Team size: 1</p>
               <p>Registration Fee (per person): Rs.175/-</p>
             </div>
-            <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link>
+            {/* <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link> */}
+            <Link to="https://gravitas.vit.ac.in/events/7a6dd3c9-e4c6-4e69-adf7-e7141ac2ec4e" target="_blank" className="team-link">Click to Register</Link>
           </div>
         </div>
       </div>
