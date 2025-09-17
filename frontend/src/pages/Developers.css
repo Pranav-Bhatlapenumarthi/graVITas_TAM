@@ -1,0 +1,63 @@
+.dev-page {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(145deg, black, #000814, #001d3d, #003566, #0466c8);
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.dev-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dev-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.dev-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin-bottom: 1rem; */
+}
+
+.role {
+  color: #25deeb;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}

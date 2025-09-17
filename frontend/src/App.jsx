@@ -8,6 +8,7 @@ import DataAlchemy from "./pages/Events/DataAlchemy.jsx";
 import Team from "./pages/Register/Team.jsx";
 import Individual from "./pages/Register/Individual.jsx";
 import Contact from "./pages/Contact.jsx";
+import Developers from "./pages/Developers.jsx";
 
 function App() {
   return (
