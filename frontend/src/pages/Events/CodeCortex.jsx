@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 
 function CodeCortex() {
   return (
-    <>
+    <div className="parent-div">
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -42,7 +42,7 @@ function CodeCortex() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

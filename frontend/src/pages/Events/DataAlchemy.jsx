@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 
 function DataAlchemy() {
   return (
-    <>
+    <div className="parent-div">
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -41,7 +41,7 @@ function DataAlchemy() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

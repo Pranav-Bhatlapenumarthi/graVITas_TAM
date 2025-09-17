@@ -5,10 +5,13 @@
 } */
 
 .event-bg{
-  height: calc(100vh - 15rem);
-  padding-top: 5rem;
+  height: calc(100vh - 17rem);
+  /* height: 100%; */
+  /* height: 100vh; */
+  /* padding-top: 5rem; */
   /* height: 100vh; */
   width: 100vw;
+  margin-top: 7rem;
   /* background: red; */
   /* background: linear-gradient(145deg, black, #000814, #001d3d, #003566, #0466c8); */
   /* padding: 1%; */
@@ -21,7 +24,8 @@
   display: flex;
   padding: 50px;
   gap: 50px;
-  margin: 10rem;
+  /* margin: 10rem; */
+  /* height */
   border-radius: 20px;
   max-width: 1100px;
   backdrop-filter: blur(16px) saturate(100%);
@@ -111,7 +115,27 @@
   color: white;
   font-weight: bold;
   border-radius: 0.375rem;
-  background-color: black;
+  /* background-color: black; */
+  backdrop-filter: blur(16px) saturate(100%);
+  -webkit-backdrop-filter: blur(16px) saturate(100%);
+  background-color: rgba(176, 193, 202, 0.328);
   padding: 0.9rem 1rem;
   font-size: 1.1em;
+}
+
+
+.parent-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.parent-home {
+  height: 200vh;
+}
+
+.aurora-wrapper {
+  height: 100vh;
 }

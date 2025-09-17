@@ -23,6 +23,7 @@ function App() {
         <Route path="/register/team/survival-showdown" element={<Team eventName="survival-showdown" />} />
         <Route path="/register/individual/data-alchemy" element={<Individual eventName="data-alchemy" />} />
         <Route path="/contactus" element={<Contact />} />
+        <Route path="/devs" element={<Developers />} />
       </Routes>
       {/* <Footer /> */}
     </Router>

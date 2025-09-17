@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 
 function SurvivalShowdown() {
   return (
-    <>
+    <div className="parent-div">
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -43,7 +43,7 @@ function SurvivalShowdown() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
