@@ -32,17 +32,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4em;
-    /* padding-bottom: 8rem; */
 }
 
 .intro h1 {
     color: white;
     font-size: 6em;
-    margin: 0 auto;
-    /* margin-bottom: 15px; */
-    /* padding-top: 11%;
-    padding-bottom: 3%; */
-    
+    margin: 0 auto;  
 }
 
 .intro p {
@@ -59,7 +54,9 @@ body{
 
 .events{
     padding-top: 5%; 
+    margin-bottom: 5%;
 }
+
 .events h2 {
     font-size: 28px;
     margin-bottom: 20px;

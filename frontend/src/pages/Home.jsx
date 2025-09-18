@@ -3,7 +3,6 @@ import React from "react";
 import PixelCard from "../assets/PixelCard";
 import Aurora from "../assets/Aurora";
 import FlowingMenu from "../assets/FlowingMenu";
-import Footer from "../components/Footer";
 
 const demoItems = [
   { link: '#', text: 'Collaborate' },
@@ -13,7 +12,7 @@ const demoItems = [
 
 function Home() {
   return (
-    <div className="parent-div parent-home">
+    <div>
       <div className="home">
         <div className="aurora-wrapper">
           <Aurora
@@ -27,14 +26,14 @@ function Home() {
             <h1> The AI & ML Club </h1>
             <p> Bridging the gap between learners and Artificial Intelligence by building tools that create real impact for communities </p>
           </div>
+            <h1> What we stand for </h1>
         </section>
 
-        {/* <section className="menu-scroll">
-        <h1> What we stand for </h1>
-        <div style={{ height: '300px', position: 'relative' }}>
-          <FlowingMenu items={demoItems} />
-        </div>
-      </section> */}
+        <section className="menu-scroll">
+          <div style={{ height: '300px', position: 'relative' }}>
+            <FlowingMenu items={demoItems} />
+          </div>
+        </section>
 
         <section className="events">
           <h2>Check out our upcoming events !</h2>
@@ -74,7 +73,7 @@ function Home() {
           </div>
         </section>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

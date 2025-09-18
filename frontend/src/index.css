@@ -16,8 +16,8 @@
 }
 
 body {
-    /* margin: auto; */
-    /* min-width: 320px; */
+    margin: auto;
+    min-width: 320px;
     min-height: 100vh;
 }
 

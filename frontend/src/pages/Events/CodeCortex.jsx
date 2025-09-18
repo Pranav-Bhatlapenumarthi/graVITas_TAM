@@ -2,11 +2,10 @@ import React from "react";
 import "./IndividualEvent.css"
 import Aurora from "../../assets/Aurora";
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
 
 function CodeCortex() {
   return (
-    <div className="parent-div">
+    <div>
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -41,7 +40,6 @@ function CodeCortex() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

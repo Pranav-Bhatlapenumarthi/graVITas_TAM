@@ -2,11 +2,10 @@ import React from "react";
 import Aurora from "../../assets/Aurora";
 import "./IndividualEvent.css"
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
 
 function DataAlchemy() {
   return (
-    <div className="parent-div">
+    <div>
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -40,7 +39,6 @@ function DataAlchemy() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ body {
 }
 
 .navbar {
+  position: absolute;
   background: transparent;
   padding: 1rem 2.5rem;
   display: flex;
@@ -14,7 +15,7 @@ body {
   width: 100%;
   z-index: 100;
   box-sizing: border-box;
-  
+
   text-shadow: 0 0 20px #00000083;
   backdrop-filter: blur(16px) saturate(100%);
   -webkit-backdrop-filter: blur(16px) saturate(100%);

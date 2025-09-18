@@ -2,11 +2,10 @@ import React from "react";
 import Aurora from "../../assets/Aurora";
 import "./IndividualEvent.css"
 import { Link } from "react-router-dom";
-import Footer from "../../components/Footer";
 
 function SurvivalShowdown() {
   return (
-    <div className="parent-div">
+    <div>
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -42,7 +41,6 @@ function SurvivalShowdown() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

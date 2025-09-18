@@ -1,11 +1,11 @@
 .footer {
+    position: relative;
+    /* padding: auto; */
     background: black;
     color: white;
     text-align: center;
-    height: 10rem;
-    display: grid;
     place-items: center;
-    /* margin-top: 3%; */
+    width: 100%;
 }
 
 .footer-content {
@@ -19,7 +19,7 @@
 .footer-socials{
     flex: 1;
     min-width: 250px;
-    /* margin: 15px; */
+    margin: 15px;
     z-index: 2;
 }
 
