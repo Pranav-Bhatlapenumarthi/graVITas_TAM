@@ -28,7 +28,7 @@ function Home() {
             <h1> The AI & ML Club </h1>
             <p> Bridging the gap between learners and Artificial Intelligence by building tools that create real impact for communities </p>
           </div>
-            <h1> What we stand for </h1>
+          <h1> What we stand for </h1>
         </section>
 
         <section className="menu-scroll">

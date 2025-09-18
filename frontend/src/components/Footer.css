@@ -1,11 +1,11 @@
 .footer {
     position: relative;
-    /* padding: auto; */
     background: black;
     color: white;
     text-align: center;
     place-items: center;
     width: 100%;
+    bottom: 0;
 }
 
 .footer-content {

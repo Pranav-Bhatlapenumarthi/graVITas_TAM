@@ -21,7 +21,7 @@ body{
 }
 
 .intro {
-    padding-top: 10.7%;
+    padding-top: 10rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4em;
-    padding-bottom: 9%;
+    padding-bottom: 10rem;
 }
 
 .intro h1 {
@@ -47,16 +47,14 @@ body{
     font-weight: 500;
     font-size: 1.5em;
     width: 50vw;
-    /* max-width: 800px; */
     margin: 0 auto;
     line-height: 1.6;
     text-shadow: 0 0 30px #00000048;
-    /* padding-bottom: 10%; */
 }
 
 .events{
-    padding-top: 5%; 
-    margin-bottom: 5%;
+    padding-top: 5rem; 
+    margin-bottom: 5rem;
 }
 
 .events h2 {
@@ -114,4 +112,45 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+/* Mobile (max 600px) */
+@media (max-width: 768px) {
+  .intro {
+    margin-top: 5rem;
+    padding-top: 20%;
+    height: auto;
+  }
+
+  .intro h1 {
+    font-size: 2.5em;
+  }
+
+  .intro p {
+    font-size: 1em;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .event-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    right: 2rem;
+  }
+
+  .event-card {
+    width: 90%;
+    right: 2rem;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  button {
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+  }
+
 }

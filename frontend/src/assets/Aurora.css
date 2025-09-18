@@ -7,3 +7,14 @@
   z-index: -1; /* stays behind content */
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .aurora-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+}
