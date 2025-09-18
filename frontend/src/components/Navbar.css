@@ -1,10 +1,6 @@
-body {
-  margin: 0;
-  /* padding-top: 70px; */
-}
-
 .navbar {
   position: absolute;
+  margin-bottom: 5%;
   background: transparent;
   padding: 1rem 2.5rem;
   display: flex;
@@ -13,7 +9,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
   box-sizing: border-box;
 
   text-shadow: 0 0 20px #00000083;
@@ -43,8 +39,8 @@ body {
 }
 
 .navbar a:hover {
-  /* background-color:#013d92; */
-  /* border-bottom: 1px solid #fff; */
+  /* background-color:#013d92; 
+  border-bottom: 1px solid #fff; */
   color: white;
 }
 
@@ -70,7 +66,7 @@ body {
   padding: 8px 0;
   backdrop-filter: blur(16px) saturate(100%);
   -webkit-backdrop-filter: blur(16px) saturate(100%);
-  background-color: rgba(32, 45, 52, 0.25);
+  background-color: rgba(32, 45, 52, 0.75);
 }
 
 .dropdown-content a {

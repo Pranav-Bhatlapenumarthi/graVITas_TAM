@@ -4,7 +4,7 @@ import "./Developers.css";
 const developers = [
   {
     name: "Pranav Bhatlapenumarthi",
-    role: "Frontend Lead",
+    role: "Frontend Dev",
     image: "/pranav_pic.jpg",
     bio: "Focused on AI-ML research and building intelligent systems. Passionate about building beautiful and elegant user interfaces.",
     linkedin: "https://www.linkedin.com/in/pranav-bhatlapenumarthi-81018b314/",
@@ -12,7 +12,7 @@ const developers = [
   },
   {
     name: "Shuvam Mitra",
-    role: "Backend Lead",
+    role: "Backend Dev",
     image: "/shuvam_pic.jpg",
     bio: "Building intuitive projects on the Web. Passionate about competitive programming & design.",
     linkedin: "https://www.linkedin.com/in/shuvam-mitra/",
