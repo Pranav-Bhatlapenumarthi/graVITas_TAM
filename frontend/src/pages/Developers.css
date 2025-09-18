@@ -1,8 +1,7 @@
 .dev-page {
   text-align: center;
-  padding-top: 5%;
+  padding-top: 8rem;
   background: linear-gradient(145deg, black, #000814, #001d3d, #003566, #0466c8);
-  min-height: 100vh;
 }
 
 .title {
@@ -15,9 +14,10 @@
   display: flex;
   flex-direction: row;
   justify-items: center;
+  align-items: center;
   text-align: center;
-  gap: 5%;
-  margin-left: 25%;
+  gap: 5rem;
+  margin-left: 23rem;
 }
 
 .team-grid{
@@ -26,15 +26,16 @@
   flex-direction: row;
   justify-items: center;
   text-align: center;
-  gap: 5%;
 }
 
 .team-grid.t1{
-  margin-left: 20%
+  gap: 5rem;
+  margin-left: 26rem;
 }
 
 .team-grid.t2{
-  margin-left: 22%;
+  gap: 3rem;
+  margin-left: 10rem;
 }
 
 .dev-card {
@@ -44,7 +45,7 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 3%;
+  margin-bottom: 2rem;
 }
 
 .team-card {
@@ -54,7 +55,7 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 5%;
+  margin-bottom: 2rem;
 }
 
 
@@ -69,9 +70,9 @@
 }
 
 .dev-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50rem;
   object-fit: cover;
   /* margin-bottom: 1rem; */
 }
@@ -93,10 +94,54 @@
   margin: 0 0.5rem;
   text-decoration: none;
   color: white;
-  font-size: 24px;
+  font-size: 1.8rem;
   
 }
 
 .socials a:hover {
   color: #2563eb;
+}
+
+@media (max-width: 768px) {
+
+  .dev-page{
+    margin-bottom: 0.1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .dev-grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .team-grid.t1, .team-grid.t2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    margin-right:3rem;
+  }
+  .dev-card, .team-card {
+    max-width: 90%;
+    flex: 1 1 100%;
+  }
+
+  .dev-img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
 }

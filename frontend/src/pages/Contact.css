@@ -100,13 +100,14 @@
     .grp_pic {
         width: 100%;
         max-width: 90%;
+        margin-right: 2rem;
         height: auto;
     }
 
     .contact-container {
         width: 95%;
-        margin-top: 1rem;
-        margin-left: 1rem;
+        margin-top: 3rem;
+        margin-left: 0.5rem;
     }
 
     .contact-container h2 {

@@ -34,17 +34,18 @@ const team = [
     role: "Faculty Coordintor",
     image: "/Images/sivakumarsir_pic.jpg",
     linkedin: "https://www.linkedin.com/in/sivakumar-rajagopal-908a72268/",
-  },
+  }
+
+];
+
+const team_2 =[
   {
     name: "Vedant Patil",
     role: "Chairperson",
     image: "/Images/vedant_pic.jpg",
     linkedin: "https://www.linkedin.com/in/vedant-patil-891a74164/",
-  }
-];
-
-const team_2 =[
-    {
+  },
+  {
     name: "Somil Agrawal",
     role: "Secretary",
     image: "/Images/somil_pic.jpg",
