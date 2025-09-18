@@ -20,7 +20,10 @@ function DataAlchemy() {
           </div>
 
           <div className="event-content">
-            <h1 className="event-title">Data Alchemy 3.0: Code.Compile.Conquer</h1>
+            <h1 className="event-title">Data Alchemy 3.0</h1>
+            <p className="event-description">
+              Code.Compile.Conquer
+            </p>
             <p className="description">
               Unlock your ML potential at Data Alchemy 3.0, a hands-on workshop where you'll dive into practical projects, master the fundamentals, and receive expert guidance. Transform your skills from basics to expertise and kickstart your Machine Learning journey with us!
             </p>

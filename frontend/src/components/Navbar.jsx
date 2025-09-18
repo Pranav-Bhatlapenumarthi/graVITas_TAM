@@ -22,9 +22,9 @@ function Navbar(){
                 <li className="dropdown">
                     <Link className="dropbtn">Events</Link>
                     <div className="dropdown-content">
-                        <Link to="/events/survival-showdown" onClick={closeMenu}>Survival Showdown</Link>
                         <Link to="/events/hackathon" onClick={closeMenu}>Code Cortex 2.0</Link>
                         <Link to="/events/data-alchemy" onClick={closeMenu}>Data Alchemy 3.0</Link>
+                        <Link to="/events/survival-showdown" onClick={closeMenu}>Survival Showdown</Link>
                     </div>
                 </li>
                 <li><Link to="/contactus" onClick={closeMenu}>Contact Us</Link></li>

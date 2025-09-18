@@ -43,7 +43,7 @@ function Home() {
             <div className="event-card">
               <PixelCard variant="blue">
                 <h3>Survival Showdown</h3>
-                <p>Will you survive, or will the Demogorgon prevail? Join us for an immersive experience inspired by Stranger Things!</p>
+                <p>Will you survive, or will the Demogorgon prevail? Join us for an immersive escape room experience inspired by Stranger Things!</p>
               </PixelCard>
               <button onClick={() => navigate("/events/survival-showdown")}>
                 Register Now
@@ -63,7 +63,7 @@ function Home() {
             <div className="event-card">
               <PixelCard variant="blue">
                 <h3>Data Alchemy 3.0</h3>
-                <p>Register now to level up your ML skills from an absolute begineer to a pro! Kickstart your Machine Learning journey with us!</p>
+                <p>Register now to level up your ML skills from an absolute beginner to a pro! Kickstart your Machine Learning journey with us!</p>
               </PixelCard>
               <button onClick={() => navigate("/events/data-alchemy")}>
                 Register Now
