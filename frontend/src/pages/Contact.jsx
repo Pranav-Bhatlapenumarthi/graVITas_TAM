@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import Aurora from "../assets/Aurora";
 
 function Contact(){
     const [form, setForm] = useState({
@@ -41,7 +42,13 @@ function Contact(){
 
     return(
         <div className="page-bg">
-            <img className="grp_pic" src="/Images/tam_club_pic.jpg" alt="grp_pic"/>
+            <div className="aurora-wrapper">
+                <Aurora
+                    colorStops={["#0077b6", "#00b4d8", "#03045e"]}
+                    blend={0.5}
+                    amplitude={1.0}
+                />
+            </div>
             <div className="contact-container">
                 <h2>Get in touch with the TAM-Fam !!</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -53,6 +60,7 @@ function Contact(){
                 </form>
                 {status && <p className="status-msg">{status}</p>}
             </div>
+            <img className="grp_pic" src="/Images/tam_club_pic.jpg" alt="grp_pic"/>
 
         </div>
     );
