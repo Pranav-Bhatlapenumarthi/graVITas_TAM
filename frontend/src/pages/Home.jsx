@@ -3,6 +3,7 @@ import React from "react";
 import PixelCard from "../assets/PixelCard";
 import Aurora from "../assets/Aurora";
 import FlowingMenu from "../assets/FlowingMenu";
+import { useNavigate } from "react-router-dom";
 
 const demoItems = [
   { link: '#', text: 'Innovate' },
@@ -11,6 +12,7 @@ const demoItems = [
 ];
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="home">
@@ -43,7 +45,7 @@ function Home() {
                 <h3>Survival Showdown</h3>
                 <p>Will you survive, or will the Demogorgon prevail? Join us for an immersive experience inspired by Stranger Things!</p>
               </PixelCard>
-              <button onClick={() => (window.location.href = "/events/survival-showdown")}>
+              <button onClick={() => navigate("/events/survival-showdown")}>
                 Register Now
               </button>
             </div>
@@ -53,7 +55,7 @@ function Home() {
                 <h3>Code Cortex 2.0</h3>
                 <p>Join us for a 34-hour premium hackathon where innovation meets creativity and discover your coding potential!</p>
               </PixelCard>
-              <button onClick={() => (window.location.href = "/events/hackathon")}>
+              <button onClick={() => navigate("/events/hackathon")}>
                 Register Now
               </button>
             </div>
@@ -63,7 +65,7 @@ function Home() {
                 <h3>Data Alchemy 3.0</h3>
                 <p>Register now to level up your ML skills from an absolute begineer to a pro! Kickstart your Machine Learning journey with us!</p>
               </PixelCard>
-              <button onClick={() => (window.location.href = "/events/data-alchemy")}>
+              <button onClick={() => navigate("/events/data-alchemy")}>
                 Register Now
               </button>
             </div>
