@@ -20,15 +20,21 @@ function SurvivalShowdown() {
           </div>
 
           <div className="event-content">
-            <h1 className="event-title">Survivial Showdown</h1>
+            <h1 className="event-title">Survivial Showdown: The Stranger Things Version</h1>
             <p className="event-description">
-              Get ready for an adrenaline fueled event!
+              Escape the Upside Down Before It Escapes You !
             </p>
-            <p className="description">
-              The Competitive Escape Room - a pulse-pounding event packed with mind-bending puzzles
-              and challenges that push your problem-solving and teamwork skills to the limit. It's an
-              immersive, high-stakes experience where logic meets adrenaline.
+            <p className="description">Participate in a thrilling team-based challenge where you'll solve logic puzzles, complete tasks under time pressure and collaborate with fellow players to progress.
+              Outwit the Upside Down and its monstrous inhabitants to claim victory. Will you survive, or will the Demogorgon prevail? Join us for an immersive experience inspired by Stranger Things!
             </p>
+            {/* <div  className="list">
+              <ul>
+                  <li>Solve logic puzzles</li>
+                  <li>Complete tasks under time pressure</li>
+                  <li>Collaborate with fellow players to progress</li>
+              </ul>
+            </div> */}
+            {/* <p className="description">Outwit the Upside Down and its monstrous inhabitants to claim victory. Will you survive, or will the Demogorgon prevail? Join us for an immersive experience inspired by Stranger Things!</p> */}
             <div className="details">
               <p>Venue: Mahatma Gandhi Block - 308</p>
               <p>Date: 21st Sept, 2025</p>

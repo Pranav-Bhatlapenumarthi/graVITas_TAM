@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaMedium, FaEnvelopeOpen } from "react-icons/fa";
 
 function Footer(){
     return(
@@ -14,6 +14,12 @@ function Footer(){
                         </a>
                         <a href="https://in.linkedin.com/company/tam-vit" target="_blank" rel="noreferrer">
                             <FaLinkedin />
+                        </a>
+                        <a href="https://medium.com/@tam_vit" target="_blank" rel="noreferrer">
+                            <FaMedium />
+                        </a>
+                        <a href="mailto:Mlai@vit.ac.in" target="_blank" rel="noreferrer">
+                            <FaEnvelopeOpen />
                         </a>
                     </div>
                 </div>

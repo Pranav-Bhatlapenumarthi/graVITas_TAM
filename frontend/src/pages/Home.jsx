@@ -5,9 +5,9 @@ import Aurora from "../assets/Aurora";
 import FlowingMenu from "../assets/FlowingMenu";
 
 const demoItems = [
-  { link: '#', text: 'Collaborate' },
   { link: '#', text: 'Innovate' },
-  { link: '#', text: 'Empower' },
+  { link: '#', text: 'Collaborate' },
+  { link: '#', text: 'Transform' },
 ];
 
 function Home() {
@@ -41,8 +41,7 @@ function Home() {
             <div className="event-card">
               <PixelCard variant="blue">
                 <h3>Survival Showdown</h3>
-                <p>Get ready for an adrenaline fueled event! A thrilling coding challenge where participants must survive
-                  through rounds of problem-solving. </p>
+                <p>Will you survive, or will the Demogorgon prevail? Join us for an immersive experience inspired by Stranger Things!</p>
               </PixelCard>
               <button onClick={() => (window.location.href = "/events/survival-showdown")}>
                 Register Now
@@ -52,8 +51,7 @@ function Home() {
             <div className="event-card">
               <PixelCard variant="blue">
                 <h3>Code Cortex 2.0</h3>
-                <p>The ultimate innovation race: Code, Create and Conquer! Collaborate, innovate, and build exciting projects in this intensive
-                  hackathon. </p>
+                <p>Join us for a 34-hour premium hackathon where innovation meets creativity and discover your coding potential!</p>
               </PixelCard>
               <button onClick={() => (window.location.href = "/events/hackathon")}>
                 Register Now
@@ -63,8 +61,7 @@ function Home() {
             <div className="event-card">
               <PixelCard variant="blue">
                 <h3>Data Alchemy 3.0</h3>
-                <p>From foundational concepts to advanced techniques, we'll cover it hands-on, practical and designed to take you from
-                  beginner to master.</p>
+                <p>Register now to level up your ML skills from an absolute begineer to a pro! Kickstart your Machine Learning journey with us!</p>
               </PixelCard>
               <button onClick={() => (window.location.href = "/events/data-alchemy")}>
                 Register Now

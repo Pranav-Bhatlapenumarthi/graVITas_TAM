@@ -21,6 +21,7 @@ body{
 }
 
 .intro {
+    padding-top: 10.7%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4em;
+    padding-bottom: 9%;
 }
 
 .intro h1 {

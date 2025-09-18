@@ -20,13 +20,13 @@ function CodeCortex() {
           </div>
 
           <div className="event-content">
-            <h1 className="event-title">Code Cortex 2.0</h1>
-            <p className="event-description">
+            <h1 className="event-title">Code Cortex 2.0: Ctrl+Alt+Code Cortex</h1>
+            {/* <p className="event-description">
               The ultimate innovation race: Code, Create and Conquer!
-            </p>
+            </p> */}
             <p className="description">
-              An electrifying hackathon where innovation meets adrenaline! This high-energy event units brilliant minds to
-              tackle real-world challenges, unleash cutting-edge code, and build game-changing solutions.
+              Join us for Code Cortex 2.0, a 34-hour premium hackathon where innovation meets creativity.
+              Explore various tracks, including AR/VR, IoT, Blockchain, AI/ML, and more. Collaborate, innovate, and win . Register now and be part of this coding extravaganza!
             </p>
             <div className="details">
               <p>Venue: Shakespeare Gallery</p>

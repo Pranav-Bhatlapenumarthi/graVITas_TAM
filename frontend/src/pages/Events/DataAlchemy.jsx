@@ -20,12 +20,9 @@ function DataAlchemy() {
           </div>
 
           <div className="event-content">
-            <h1 className="event-title">Data Alchemy 3.0</h1>
+            <h1 className="event-title">Data Alchemy 3.0: Code.Compile.Conquer</h1>
             <p className="description">
-              A dynamic workshop where brilliant minds dive into data analysis and visualization,
-              turning raw info into powerful insights. It's a magnet for top talent ready to transform
-              numbers into magic! From foundational concepts to advanced techniques, we'll cover it hands-on,
-              practical and designed to take you from beginner to master.
+              Unlock your ML potential at Data Alchemy 3.0, a hands-on workshop where you'll dive into practical projects, master the fundamentals, and receive expert guidance. Transform your skills from basics to expertise and kickstart your Machine Learning journey with us!
             </p>
             <div className="details">
               <p>Venue: Shakespeare Gallery</p>
