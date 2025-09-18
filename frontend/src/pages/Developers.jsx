@@ -7,7 +7,7 @@ const developers = [
   {
     name: "Pranav Bhatlapenumarthi",
     role: "Frontend Dev",
-    image: "/src/components/Images/pranav_pic.jpg",
+    image: "/Images/pranav_pic.jpg",
     bio: "Focused on AI-ML research and building intelligent systems. Passionate about building beautiful and elegant user interfaces.",
     linkedin: "https://www.linkedin.com/in/pranav-bhatlapenumarthi-81018b314/",
     github: "https://github.com/Pranav-Bhatlapenumarthi"
@@ -15,7 +15,7 @@ const developers = [
   {
     name: "Shuvam Mitra",
     role: "Backend Dev",
-    image: "/src/components/Images/shuvam_pic.jpg",
+    image: "/Images/shuvam_pic.jpg",
     bio: "Building intuitive projects on the Web. Passionate about competitive programming & design.",
     linkedin: "https://www.linkedin.com/in/shuvam-mitra/",
     github: "https://github.com/shuvam586/",
@@ -26,19 +26,19 @@ const team = [
   {
     name: "Dr. Monica Subashini.M",
     role: "Faculty Coordintor",
-    image: "/src/components/Images/monicamam_pic.jpg",
+    image: "/Images/monicamam_pic.jpg",
     linkedin: "https://www.linkedin.com/in/dr-monica-subashini-m-8012a531/",
   },
   {
     name: "Dr. Sivakumar Rajagopal",
     role: "Faculty Coordintor",
-    image: "/src/components/Images/sivakumarsir_pic.jpg",
+    image: "/Images/sivakumarsir_pic.jpg",
     linkedin: "https://www.linkedin.com/in/sivakumar-rajagopal-908a72268/",
   },
   {
     name: "Vedant Patil",
     role: "Chairperson",
-    image: "/src/components/Images/vedant_pic.jpg",
+    image: "/Images/vedant_pic.jpg",
     linkedin: "https://www.linkedin.com/in/vedant-patil-891a74164/",
   }
 ];
@@ -47,55 +47,55 @@ const team_2 =[
     {
     name: "Somil Agrawal",
     role: "Secretary",
-    image: "/src/components/Images/somil_pic.jpg",
+    image: "/Images/somil_pic.jpg",
     linkedin: "https://www.linkedin.com/in/somil-agrawal/",
   },
     {
     name: "Divya Juliet",
     role: "Vice Chairperson",
-    image: "/src/components/Images/divya_pic.jpg",
+    image: "/Images/divya_pic.jpg",
     linkedin: "https://www.linkedin.com/in/divya-juliet-72a50828a/",
   },
     {
     name: "Yug Raithatha",
     role: "Co-Secretary",
-    image: "/src/components/Images/yug_pic.jpg",
+    image: "/Images/yug_pic.jpg",
     linkedin: "https://www.linkedin.com/in/yug-raithatha-525977289/",
   },
     {
     name: "Mayank Gupta",
     role: "Technical Head",
-    image: "/src/components/Images/mayank_pic.jpg",
+    image: "/Images/mayank_pic.jpg",
     linkedin: "https://www.linkedin.com/in/mayank-gupta-218636253/",
   },
     {
     name: "Tanisha Bagga",
     role: "Management Head",
-    image: "/src/components/Images/tanisha_pic.jpg",
+    image: "/Images/tanisha_pic.jpg",
     linkedin: "https://www.linkedin.com/in/tanisha-bagga-00aab628a/",
   },
     {
     name: "Reyansh Ashok",
     role: "Projects Head",
-    image: "/src/components/Images/reyansh_pic.jpg",
+    image: "/Images/reyansh_pic.jpg",
     linkedin: "https://www.linkedin.com/in/reyansh-ashok-0207b1232/",
   },
     {
     name: "Nimaath",
     role: "Design Head",
-    image: "/src/components/Images/nimaath_pic.jpg",
+    image: "/Images/nimaath_pic.jpg",
     linkedin: "https://www.linkedin.com/in/nimaath/",
   },
     {
     name: "Dhanjith Velluva",
     role: "Marketing Head",
-    image: "/src/components/Images/dhanjith_pic.jpg",
+    image: "/Images/dhanjith_pic.jpg",
     linkedin: "https://www.linkedin.com/in/dhanjith-velluva/",
   },
     {
     name: "Riya Sharma",
     role: "PR Head",
-    image: "/src/components/Images/riya_pic.jpg",
+    image: "/Images/riya_pic.jpg",
     linkedin: "https://www.linkedin.com/in/riya-sharma-a2a79024a/",
   }
 ];
