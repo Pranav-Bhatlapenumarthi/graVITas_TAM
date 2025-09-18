@@ -6,9 +6,9 @@ import FlowingMenu from "../assets/FlowingMenu";
 import { useNavigate } from "react-router-dom";
 
 const demoItems = [
-  { link: '#', text: 'Innovate' },
-  { link: '#', text: 'Collaborate' },
-  { link: '#', text: 'Transform' },
+  { link: '#', text: 'Innovation' },
+  { link: '#', text: 'Collaboration' },
+  { link: '#', text: 'Transformation' },
 ];
 
 function Home() {
