@@ -23,8 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 .env
-
-# Misc.
-public/tam_club_pic.jpg
-public/shuvam_pic.jpg
-public/pranav_pic.jpg

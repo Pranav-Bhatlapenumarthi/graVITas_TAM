@@ -20,6 +20,23 @@
   margin-left: 25%;
 }
 
+.team-grid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  text-align: center;
+  gap: 5%;
+}
+
+.team-grid.t1{
+  margin-left: 20%
+}
+
+.team-grid.t2{
+  margin-left: 22%;
+}
+
 .dev-card {
   background: #111;
   padding: 1.5rem;
@@ -27,9 +44,26 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   max-width: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 3%;
 }
 
-.dev-card:hover {
+.team-card {
+  background: #111;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 5%;
+}
+
+
+.dev-card h3, .team-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.dev-card:hover, .team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
@@ -46,10 +80,11 @@
   color: #25deeb;
   font-weight: 600;
   margin: 0.5rem 0;
+  font-size: 1.3rem;
 }
 
 .bio {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #aaa;
   margin-bottom: 1rem;
 }
@@ -57,10 +92,11 @@
 .socials a {
   margin: 0 0.5rem;
   text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
+  color: white;
+  font-size: 24px;
+  
 }
 
 .socials a:hover {
-  text-decoration: underline;
+  color: #2563eb;
 }
