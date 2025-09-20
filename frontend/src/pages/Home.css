@@ -114,7 +114,6 @@ button {
     transition: all 0.3s ease;
 }
 
-/* Mobile (max 600px) */
 @media (max-width: 768px) {
   .intro {
     margin-top: 5rem;
@@ -142,9 +141,10 @@ button {
   }
 
   .event-card {
-    width: 90%;
-    right: 2rem;
-    padding: 1.2rem;
+    /* width: 90%; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
     text-align: center;
   }
 
