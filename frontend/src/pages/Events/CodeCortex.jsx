@@ -2,10 +2,13 @@ import React from "react";
 import "./IndividualEvent.css"
 import Aurora from "../../assets/Aurora";
 import { Link } from "react-router-dom";
+import NavbarBlock from "../../components/NavbarBlock";
+import Footer from "../../components/Footer";
 
 function CodeCortex() {
   return (
-    <div>
+    <div className="event-main">
+      <NavbarBlock />
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -35,11 +38,12 @@ function CodeCortex() {
               <p>Team size: 4</p>
               <p>Registration Fee (per person): Rs. 215/-</p>
             </div>
-            {/* <Link to="/register/team/hackathon" className="team-link">Click to Register</Link> */}
-            <Link to="https://gravitas.vit.ac.in/events/0f3f4ce7-5e02-488c-8187-1b18f3407a01" target="_blank" className="team-link">Click to Register</Link>
+            <Link to="/register/team/hackathon" className="team-link">Click to Register</Link>
+            {/* <Link to="https://gravitas.vit.ac.in/events/0f3f4ce7-5e02-488c-8187-1b18f3407a01" target="_blank" className="team-link">Click to Register</Link> */}
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

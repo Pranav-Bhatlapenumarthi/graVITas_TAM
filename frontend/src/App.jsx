@@ -13,7 +13,7 @@ import Developers from "./pages/Developers.jsx";
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events/survival-showdown" element={<SurvivalShowdown />} />
@@ -25,7 +25,7 @@ function App() {
         <Route path="/contactus" element={<Contact />} />
         <Route path="/devs" element={<Developers />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

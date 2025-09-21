@@ -2,10 +2,13 @@ import React from "react";
 import Aurora from "../../assets/Aurora";
 import "./IndividualEvent.css"
 import { Link } from "react-router-dom";
+import NavbarBlock from "../../components/NavbarBlock";
+import Footer from "../../components/Footer";
 
 function SurvivalShowdown() {
   return (
-    <div>
+    <div className="event-main">
+      <NavbarBlock />
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -36,11 +39,12 @@ function SurvivalShowdown() {
               <p>Team size: 4</p>
               <p>Registration Fee (per person): Rs.150/-</p>
             </div>
-            {/* <Link to="/register/team/survival-showdown" className="team-link">Click to Register</Link> */}
-            <Link to="https://gravitas.vit.ac.in/events/4959ecd8-e4d0-4348-b3b0-5b9c539972ed" target="_blank" className="team-link">Click to Register</Link>
+            <Link to="/register/team/survival-showdown" className="team-link">Click to Register</Link>
+            {/* <Link to="https://gravitas.vit.ac.in/events/4959ecd8-e4d0-4348-b3b0-5b9c539972ed" target="_blank" className="team-link">Click to Register</Link> */}
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

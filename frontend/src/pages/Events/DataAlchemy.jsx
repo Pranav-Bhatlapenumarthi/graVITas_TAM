@@ -2,10 +2,13 @@ import React from "react";
 import Aurora from "../../assets/Aurora";
 import "./IndividualEvent.css"
 import { Link } from "react-router-dom";
+import NavbarBlock from "../../components/NavbarBlock";
+import Footer from "../../components/Footer";
 
 function DataAlchemy() {
   return (
-    <div>
+    <div className="event-main">
+      <NavbarBlock />
       <div className="event-bg">
         <div className="aurora-wrapper">
           <Aurora
@@ -22,7 +25,7 @@ function DataAlchemy() {
           <div className="event-content">
             <h1 className="event-title">Data Alchemy 3.0</h1>
             <p className="event-description">
-              Code.Compile.Conquer
+              Code. Compile. Conquer
             </p>
             <p className="description">
               Unlock your ML potential at Data Alchemy 3.0, a hands-on workshop where you'll dive into practical projects, master the fundamentals, and receive expert guidance. Transform your skills from basics to expertise and kickstart your Machine Learning journey with us!
@@ -34,11 +37,12 @@ function DataAlchemy() {
               <p>Team size: 1</p>
               <p>Registration Fee (per person): Rs.175/-</p>
             </div>
-            {/* <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link> */}
-            <Link to="https://gravitas.vit.ac.in/events/7a6dd3c9-e4c6-4e69-adf7-e7141ac2ec4e" target="_blank" className="team-link">Click to Register</Link>
+            <Link to="/register/individual/data-alchemy" className="team-link">Click to Register</Link>
+            {/* <Link to="https://gravitas.vit.ac.in/events/7a6dd3c9-e4c6-4e69-adf7-e7141ac2ec4e" target="_blank" className="team-link">Click to Register</Link> */}
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import PixelCard from "../assets/PixelCard";
 import Aurora from "../assets/Aurora";
 import FlowingMenu from "../assets/FlowingMenu";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const demoItems = [
   { link: '#', text: 'Innovation' },
@@ -15,6 +17,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div>
+      <Navbar />
       <div className="home">
         <div className="aurora-wrapper">
           <Aurora
@@ -72,6 +75,7 @@ function Home() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,9 @@
 import React, { use, useState } from "react";
 import "./Team.css";
 import { useNavigate } from "react-router-dom";
-
+import NavbarBlock from "../../components/NavbarBlock";
+import Footer from "../../components/Footer";
+import Aurora from "../../assets/Aurora";
 
 function Individual({ eventName }) {
   const navigate = useNavigate();
@@ -9,6 +11,7 @@ function Individual({ eventName }) {
   const [formData, setFormData] = useState({
     name: "", regNumber: "", email: "", phone: ""
   });
+  const [buttonLabel, setBL] = useState(false);
 
   const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -30,7 +33,10 @@ function Individual({ eventName }) {
     };
 
     var teamId;
-    fetch(apiUrl+'api/register/team', {
+
+    setBL(true);
+
+    fetch(apiUrl + 'api/register/team', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
@@ -52,7 +58,7 @@ function Individual({ eventName }) {
           teamcode: teamId,
           regNo: formData.regNumber
         }
-        fetch(apiUrl+'api/register/member', {
+        fetch(apiUrl + 'api/register/member', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload2)
@@ -60,7 +66,7 @@ function Individual({ eventName }) {
           .then(res => res.json())
           .then(data => {
             console.log(`Registration successful !`);
-            fetch(apiUrl+'api/register/updateLeader', {
+            fetch(apiUrl + 'api/register/updateLeader', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(payload3)
@@ -82,26 +88,45 @@ function Individual({ eventName }) {
       .catch(err => {
         alert("Registration failed !");
       })
+      .finally(() => {
+        setTimeout(() => {
+          setBL(false);
+        }, 1500);
+      }
+      )
 
   };
 
   return (
-    <div className="form-container">
-      <h1>{betterNames[eventName]} Registration</h1>
-      {/* <p>For Data Alchemy</p> */}
+    <div className="form-main">
+      <NavbarBlock />
+      <div className="form-parent">
+        <div className="aurora-wrapper">
+          <Aurora
+            colorStops={["#0077b6", "#00b4d8", "#03045e"]}
+            blend={0.5}
+            amplitude={1.0}
+          />
+        </div>
+        <div className="form-container">
+          <h1>{betterNames[eventName]} Registration</h1>
+          {/* <p>For Data Alchemy</p> */}
 
-      <form onSubmit={handleSubmit} className="event-form">
-        <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
-        <input type="text" name="regNumber" placeholder="Registration Number" value={formData.regNumber} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Mail ID" value={formData.email} onChange={handleChange} required />
-        <input type="text" name="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} required />
-        {indireg==1 && (
-          <p className="team-id">
-            You have successfully registered for {betterNames[eventName]}! 
-          </p>
-        )}
-        <button type="submit" className="submit-btn">Submit Registration</button>
-      </form>
+          <form onSubmit={handleSubmit} className="event-form">
+            <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+            <input type="text" name="regNumber" placeholder="Registration Number" value={formData.regNumber} onChange={handleChange} required />
+            <input type="email" name="email" placeholder="Mail ID" value={formData.email} onChange={handleChange} required />
+            <input type="text" name="phone" placeholder="Contact Number" value={formData.phone} onChange={handleChange} required />
+            {indireg == 1 && (
+              <p className="team-id">
+                You have successfully registered for {betterNames[eventName]}!
+              </p>
+            )}
+            <button type="submit" disabled={buttonLabel} className="submit-btn">{buttonLabel ? "Loading" : "Submit Registration"}</button>
+          </form>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
