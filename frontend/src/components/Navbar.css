@@ -117,6 +117,7 @@
 
   .nav-links.active {
     display: flex;
+    z-index: 10;
   }
 
   .navbar a {
